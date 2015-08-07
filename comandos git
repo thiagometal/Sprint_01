@@ -1,0 +1,65 @@
+icomp@template ~/Área de Trabalho $ git config --global user.name "thiagometal"
+icomp@template ~/Área de Trabalho $ git config --global user.email thiagometal.fne@gmail.com
+icomp@template ~/Área de Trabalho $ git clone https://github.com/thiagometal/progweb.git
+Cloning into 'progweb'...
+remote: Counting objects: 11, done.
+remote: Total 11 (delta 0), reused 0 (delta 0), pack-reused 11
+Unpacking objects: 100% (11/11), done.
+Checking connectivity... done.
+icomp@template ~/Área de Trabalho $ git add *
+fatal: Not a git repository (or any of the parent directories): .git
+icomp@template ~/Área de Trabalho $ git init
+Initialized empty Git repository in /home/icomp/Área de Trabalho/.git/
+icomp@template ~/Área de Trabalho $ git add *
+icomp@template ~/Área de Trabalho $ git commit -m "atividades atrasadas de php"
+[master (root-commit) f76e22e] atividades atrasadas de php
+ 1 file changed, 1 insertion(+)
+ create mode 160000 progweb
+icomp@template ~/Área de Trabalho $ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+icomp@template ~/Área de Trabalho $ ^C
+icomp@template ~/Área de Trabalho $ git remote add origin https://github.com/thiagometal/progweb.git
+icomp@template ~/Área de Trabalho $ git push -u origin masterUsername for 'https://github.com': thiagometal
+Password for 'https://thiagometal@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/thiagometal/progweb.git/'
+icomp@template ~/Área de Trabalho $ git push -u origin master
+Username for 'https://github.com': thiagometal
+Password for 'https://thiagometal@github.com': 
+To https://github.com/thiagometal/progweb.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/thiagometal/progweb.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+icomp@template ~/Área de Trabalho $ cd progweb
+icomp@template ~/Área de Trabalho/progweb $ ls
+first_page.html  fundo.png    second_page.html  style4.css
+first-php        page_3.html  second-php        style.css
+fundo4.jpg       page_4.html  style3.css
+icomp@template ~/Área de Trabalho/progweb $ git add *
+icomp@template ~/Área de Trabalho/progweb $ git commit -m "atividades atrasadas de php"
+[master eacee23] atividades atrasadas de php
+ 5 files changed, 248 insertions(+)
+ create mode 100644 first-php/first_index.php
+ create mode 100644 first-php/first_php.html
+ create mode 100644 second-php/pessoa.sql
+ create mode 100644 second-php/second_index.php
+ create mode 100644 second-php/second_php.html
+icomp@template ~/Área de Trabalho/progweb $ git push -u origin master
+Username for 'https://github.com': thiagometal
+Password for 'https://thiagometal@github.com': 
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 2.67 KiB | 0 bytes/s, done.
+Total 9 (delta 2), reused 0 (delta 0)
+To https://github.com/thiagometal/progweb.git
+   775d673..eacee23  master -> master
+Branch master set up to track remote branch master from origin.
